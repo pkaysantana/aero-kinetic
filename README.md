@@ -1,8 +1,8 @@
 # Aero-Kinetic Analytical System v1.3
 
-**A comprehensive, interactive simulation platform for gas viscosity analysis using linearized Poiseuille flow.**
+**A comprehensive, interactive simulation platform for gas viscosity analysis using linearised Poiseuille flow.**
 
-This project bridges the gap between theoretical physical chemistry and modern web-based data visualization. It features a robust Python simulation kernel capable of generating high-fidelity experimental data and a React-based "Mission Control" interface for real-time analysis, visualization, and reporting.
+This project bridges the gap between theoretical physical chemistry and modern web-based data visualisation. It features a robust Python simulation kernel capable of generating high-fidelity experimental data and a React-based "Mission Control" interface for real-time analysis, visualization, and reporting.
 
 ## Key Features (v1.3)
 
