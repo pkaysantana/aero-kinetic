@@ -1,0 +1,7 @@
+{
+    "python.defaultInterpreterPath": "c:\\Users\\Don\\aero-kinetic\\aero-kinetic\\venv\\Scripts\\python.exe",
+    "python.analysis.extraPaths": [
+        "c:\\Users\\Don\\aero-kinetic\\aero-kinetic"
+    ],
+    "python.envFile": "c:\\Users\\Don\\aero-kinetic\\aero-kinetic\\.env"
+}

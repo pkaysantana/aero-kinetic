@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f172a;
+  /* slate-950 to match app background */
+}
+
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-family: 'Times New Roman', serif;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .dashboard-container {
+    border: none;
+    box-shadow: none;
+  }
+
+  .graph-container {
+    filter: invert(1);
+  }
+
+  /* Inverts dark chart for paper */
+}
+
+.print-only {
+  display: none;
+}
