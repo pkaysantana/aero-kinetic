@@ -1,16 +1,38 @@
-# React + Vite
+# Aero-Kinetic Interface (Mission Control)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Aero-Kinetic Interface** is a high-fidelity React application designed to visualize and analyze gas viscosity experiments. It serves as the primary user interaction point for the Aero-Kinetic System.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Real-Time Dashboard**: Visualizes pressure decay ($1/P$ vs $t$) with instant updates.
+* **Molecular Probe**: Displays effective collision diameters with scientifically accurate molecule rendering ($N_2$, $CO_2$, $Ar$, $He$).
+* **Thermal Dynamics**: Interactive temperature slider ($200K - 400K$) implementing Sutherland's Law.
+* **Data Management**:
+  * **Editable Table**: Manual entry/correction of experimental data points.
+  * **Export**: Download standardized JSON datasets for peer review.
+  * **Report**: One-click generation of printer-friendly lab reports.
 
-## React Compiler
+## Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Framework**: React (Vite)
+* **Styling**: Tailwind CSS v4.0 (Dark Mode Optimized)
+* **Visualization**: Recharts (Data), Custom CSS/JSX (Molecules)
+* **Icons**: Lucide React
 
-## Expanding the ESLint configuration
+## Setup & Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install**: `npm install`
+2. **Run**: `npm run dev`
+3. **Build**: `npm run build`
+
+## Key Components
+
+* `App.jsx`: Main verified dashboard controller. Handles state, simulation logic, and layout.
+* `physicsEngine.js`: Frontend port of the Scientific Kernel. Contains `GAS_LIBRARY` and calculation logic (Poiseuille/Sutherland).
+* `components/MolecularProbe.jsx`: specialized component for visualizing atomic spacing and structure.
+
+## Version 1.3 Changelog
+
+* Merged Real-Time editing with Simulation Kernel.
+* Added Sutherland's Law for temperature-dependent calculations.
+* Implemented "Print Mode" for academic reporting.
